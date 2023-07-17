@@ -1,4 +1,4 @@
-## [0.0.1+1] - [17-07-2023]
+## [0.0.2] - [17-07-2023]
 
 * TODO: changing inside the example.
 
