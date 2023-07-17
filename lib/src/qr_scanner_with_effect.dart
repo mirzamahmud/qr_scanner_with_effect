@@ -26,20 +26,30 @@ class QrScannerWithEffect extends StatefulWidget {
   /// Use [formatsAllowed] to specify which formats needs to be scanned.
   final List<BarcodeFormat> formatsAllowed;
 
+  /// use [effectGradient] for effect animated color from begin to top
   final Gradient? effectGradient;
 
+  /// use [effectColor] for color of the effect
+  final Color? effectColor;
+
+  /// [qrOverlayBorderColor] is used for giving color of qr overlay border
   final Color qrOverlayBorderColor;
+
+  /// [qrOverlayBorderRadius] is used for giving border radius of qr overlay border
   final double qrOverlayBorderRadius;
+
+  /// [qrOverlayBorderLength] it defines the length of the qr overlay border
   final double qrOverlayBorderLength;
+
+  /// [qrOverlayBorderWidth] it defines the width of the qr overlay border
   final double qrOverlayBorderWidth;
 
   final double? cutOutSize;
   final double? cutOutWidth;
   final double? cutOutHeight;
   final double cutOutBottomOffset;
-
-  final double effectHeight;
   final double effectWidth;
+  final bool isScanComplete;
 
   const QrScannerWithEffect({
     required this.qrKey,
@@ -57,9 +67,9 @@ class QrScannerWithEffect extends StatefulWidget {
     this.cutOutWidth,
     this.cutOutBottomOffset = 0,
     this.effectGradient,
-    this.effectHeight = 2,
     this.effectWidth = 250,
-
+    this.isScanComplete = false,
+    this.effectColor,
     super.key
   });
 
@@ -109,14 +119,18 @@ class _QrScannerWithEffectState extends State<QrScannerWithEffect> with SingleTi
           onPermissionSet: widget.onPermissionSet,
           formatsAllowed: widget.formatsAllowed,
         ),
-        Align(
+        widget.isScanComplete ? Align(
+          alignment: Alignment.center,
+          child: Container(),
+        ) : Align(
           alignment: Alignment.center,
           child: SlideTransition(
             position: offsetAnimation,
             child: Container(
-              height: widget.effectHeight,
+              height: 2,
               width: widget.effectWidth,
               decoration: BoxDecoration(
+                color: widget.effectColor,
                 gradient: widget.effectGradient,
               ), // Adjust the color of the scanning animation
             ),
