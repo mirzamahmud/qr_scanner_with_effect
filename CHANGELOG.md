@@ -1,3 +1,3 @@
-## 0.0.1
+## [0.0.1] - [17-07-2023]
 
-* TODO: Describe initial release.
+* TODO: initial release.

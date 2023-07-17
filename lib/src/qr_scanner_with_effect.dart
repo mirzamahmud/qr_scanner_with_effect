@@ -6,6 +6,7 @@ typedef PermissionSetCallback = void Function(QRViewController, bool);
 
 class QrScannerWithEffect extends StatefulWidget {
 
+  /// [qrKey] uniquely identify elements
   final GlobalKey qrKey;
 
   /// [onQRViewCreated] gets called when the view is created
@@ -15,7 +16,6 @@ class QrScannerWithEffect extends StatefulWidget {
   final EdgeInsetsGeometry overlayMargin;
 
   /// Set which camera to use on startup.
-  ///
   /// [cameraFacing] can either be CameraFacing.front or CameraFacing.back.
   /// Defaults to CameraFacing.back
   final CameraFacing cameraFacing;
@@ -48,7 +48,11 @@ class QrScannerWithEffect extends StatefulWidget {
   final double? cutOutWidth;
   final double? cutOutHeight;
   final double cutOutBottomOffset;
+
+  /// [effectWidth] define the width of the effect
   final double effectWidth;
+
+  /// [isScanComplete] is used for remove effect after scanning complete
   final bool isScanComplete;
 
   const QrScannerWithEffect({
