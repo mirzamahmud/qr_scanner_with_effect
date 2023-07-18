@@ -12,7 +12,7 @@ class QrScannerWithEffect extends StatefulWidget {
   /// [onQRViewCreated] gets called when the view is created
   final QRViewCreatedCallback onQrScannerViewCreated;
 
-  /// Use [overlayMargin] to provide a margin to [overlay]
+  /// use [overlayMargin] to provide a margin to [overlay]
   final EdgeInsetsGeometry overlayMargin;
 
   /// Set which camera to use on startup.

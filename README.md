@@ -4,6 +4,27 @@ A Flutter widget that will use for scanning QR Code and it also has scanning eff
 
 ## Features
 
+| Parameter                                                       | Definition                                                                                                            |
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| `GlobalKey<State<StatefulWidget>> qrKey`                        | (Required) [qrKey] uniquely identify elements                                                                         |
+| `void Function(QRViewController) onQrScannerViewCreated`        | (Required) [onQRViewCreated] gets called when the view is created                                                     | 
+| `EdgeInsetsGeometry overlayMargin`                              | (Predefined)  use [overlayMargin] to provide a margin to [overlay]                                                    |
+| `CameraFacing cameraFacing`                                     | (Predefined)  Set which camera to use on startup.[cameraFacing] can either be CameraFacing.front or CameraFacing.back |
+| `void Function(QRViewController, bool)? onPermissionSet`        | (Optional) Calls the provided [onPermissionSet] callback when the permission is set                                   | 
+| `List<BarcodeFormat> formatsAllowed`                            | (Predefined) Use [formatsAllowed] to specify which formats needs to be scanned                                        |
+ | `Color qrOverlayBorderColor`                                    | (Required) [qrOverlayBorderColor] is used for giving color of qr overlay border                                       | 
+| `double qrOverlayBorderRadius`                                  | (Predefined) [qrOverlayBorderRadius] is used for giving border radius of qr overlay border                            | 
+| `double qrOverlayBorderWidth`                                   | (Predefined) [qrOverlayBorderWidth] it defines the width of the qr overlay border                                     |
+| `double qrOverlayBorderLength`                                  | (Predefined) [qrOverlayBorderLength] it defines the length of the qr overlay border                                   |
+| `Gradient? effectGradient`                                      | (Optional) use [effectGradient] for effect animated color from begin to top                                           |
+| `double effectWidth`                                            | (Predefined) [effectWidth] define the width of the effect                                                             |
+| `bool isScanComplete`                                           | (Predefined) [isScanComplete] is used for remove effect after scanning complete                                       |
+| `Color? effectColor`                                            | (Optional) use [effectColor] for color of the effect                                                                  |
+| `double? cutOutSize`                                            |                                                                                                                       | 
+| `double? cutOutHeight`                                          |                                                                                                                       |
+| `double? cutOutWidth`                                           |                                                                                                                       |
+| `double cutOutBottomOffset`                                     |                                                                                                                       |
+
 
 ## Demo
 

@@ -1,6 +1,6 @@
-## [0.0.7] - [18-07-2023]
+## [1.0.0] - [18-07-2023]
 
-* TODO: update readme.
+* TODO: releases version with features of this package.
 
 ## [0.0.6] - [18-07-2023]
 
