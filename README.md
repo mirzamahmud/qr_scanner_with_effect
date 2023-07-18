@@ -2,7 +2,7 @@
 
 A Flutter widget that will use for scanning QR Code and it also has scanning effect.
 
-# QR Code Scanner
+# QR Scanner with Effect
 
 [![pub package](https://img.shields.io/pub/v/qr_scanner_with_effect?include_prereleases)](https://pub.dartlang.org/packages/qr_scanner_with_effect)
 [![GH Actions](https://github.com/juliuscanute/qr_code_scanner/workflows/dart/badge.svg)](https://github.com/mirzamahmud/qr_scanner_with_effect/actions)
