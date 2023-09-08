@@ -1,3 +1,7 @@
+## [1.0.4] - [18-07-2023]
+
+* TODO: package version update.
+
 ## [1.0.3] - [18-07-2023]
 
 * TODO: update documentation.
