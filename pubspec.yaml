@@ -1,6 +1,6 @@
 name: qr_scanner_with_effect
 description: A Flutter package for QR scanner with scanning effect.
-version: 1.0.5
+version: 2.0.0
 homepage: https://github.com/mirzamahmud/qr_scanner_with_effect
 repository: https://github.com/mirzamahmud/qr_scanner_with_effect
 issue_tracker: https://github.com/mirzamahmud/qr_scanner_with_effect/issues
