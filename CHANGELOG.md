@@ -1,3 +1,7 @@
+## [2.0.0] - [8-09-2024]
+
+* TODO: package version update.
+
 ## [1.0.5] - [18-07-2023]
 
 * TODO: solve issue.
